@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media</title>
+</head>
+
+<body bgcolor = #fff8e7>
+
+<style>
+	nav{
+	width: 100%;
+	}
+
+	ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #E8D3B9;
+	float: center;
+	}
+
+	li{ 
+	float: right; <!--list indent-->
+	}
+
+	li a{
+	display: block;
+	font-size:20px;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family:Georgia;
+	font-weight:bold;
+	margin:0 20px;
+	line-height:40px;
+	text-transform:uppercase;
+	}
+
+	.banner{
+	 width: 100%;
+	}
+
+	.banner img{
+	width:100%;
+	height:100%;
+	border-radius: 8px;
+	}
+
+	.media{
+	width:80%;
+	max-width:800px;
+	background: #E8D3B9;
+	margin-top:30px;
+	padding: 5px 20px;
+	border-radius:8px;
+	text-align:center;
+	font-family:Georgia;
+	} 
+
+	.media h1{
+	margin-top:10;
+	font-weight:bold;
+	text-align:center;
+	color: #FFFFFF;
+	}
+
+	.txtb{
+	border:4px #E8D3B9;
+	margin: 12px 18px;
+	border-radius: 8px;
+	}
+	
+	.rate{
+	width:80%;
+	max-width:800px;
+	background: #E8D3B9;
+	margin-top:10px;
+	padding: 20px 40px;
+	border-radius:8px;
+	text-align:center;
+	font-family:Georgia;
+	} 
+
+	.rate h1{
+	margin-top:5px;
+	font-weight:bold;
+	text-align:center;
+	color: #fff;
+	}
+
+	.txtb-rate{
+	margin: 12px 60px;
+	border-radius: 8px;
+	}
+
+	.video-container{
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	}
+
+	.video-container video{
+	height:240px;
+	margin:30px;
+	border-radius:10px;
+	}
+
+	.video-container .video video{
+	object-fit:cover;
+	outline:none;
+	border:none;
+	}
+
+	.video-container .video video:hover{
+	transition: .2s linear;
+	transform: scale(2);
+	}
+
+	.video-container .video .active:hover{
+	transition:transform 2s;
+	transform:scale(2);
+	}
+
+	.img-container{
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	}
+
+	.img-container img{
+	height:240px;
+	margin:30px;
+	border-radius:10px;
+	}
+
+	.img-container .img img{
+	object-fit:cover;
+	outline:none;
+	border:none;
+	}
+
+	.img-container .img img:hover{
+	transition: .2s linear;
+	transform: scale(2);
+	}
+
+	.img-container .img .active:hover{
+	transition:transform 2s;
+	transform:scale(12);
+	}
+
+	h2{
+	color: #b69d81;
+	}
+
+	h4{
+	color: #fff;
+	}
+
+	.container {
+  	display: block;
+  	position: relative;
+  	padding-left: 35px;
+  	margin-bottom: 12px;
+  	cursor: pointer;
+  	font-size: 16px;
+  	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+	}
+
+	.container input {
+  	position: absolute;
+  	opacity: 0;
+  	cursor: pointer;
+  	height: 0;
+  	width: 0;
+	}
+
+	.checkmark {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	height: 25px;
+  	width: 25px;
+  	background-color: #eee;
+	}
+
+	.checkmark:after {
+  	content: "";
+  	position: absolute;
+  	display: none;
+	}
+
+	.container input:checked ~ .checkmark:after {
+  	display: block;
+	}
+
+	.container .checkmark:after {
+  	left: 9px;
+  	top: 5px;
+  	width: 5px;
+  	height: 10px;
+  	border: solid white;
+  	border-width: 0 3px 3px 0;
+  	-webkit-transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+  	transform: rotate(45deg);
+}
+
+</style>
+
+<header>
+	<nav> 
+	<ul>
+	<li><a href = "contact.html">CONTACT</a></li>
+	<li><a href = "media.html">MEDIA</a></li>
+	<li><a href = "about.html">ABOUT</a></li>
+	<li><a href = "index11.html">HOME</a></li>
+	</nav>
+	</ul>
+</header>
+
+<br>
+<div>
+<hr width=100% color = #b69d81>
+</div>
+
+<center>
+<div class = "media">
+<h1>PHOTOS</h1>
+</div>
+</center>
+
+<div class = "img-container">
+
+<center>
+<div class = "img">
+	<img src="plane.jpg" alt="Plane">
+	<img src="sky.jpg" alt="Sky">
+	<img src="ktm.jpg" alt="KTM">
+	<img src="ikea-2.jpg" alt="iKEA">
+	<img src="ikea-4.jpg" alt="iKEA">
+	<img src="lift.jpg" alt="Lift">
+	<br>
+	<h2>(Photos taken by me)</h2>
+</div>
+</center>
+</div>
+
+<center>
+<div class = "media">
+<h1>VIDEO</h1>
+</div>
+</center>
+
+<div class="video-container">
+
+<center>
+<div class = "video">
+<video controls src="haniroutine.MOV"></video>
+<br>
+<h2>(A visual representation of me binge-watching-ing k-dramas)</h2>
+<br>
+</div>
+</center>
+</div>
+
+<center>
+<div class = "media">
+<h1>MUSIC</h1>
+</div>
+</center>
+
+<div class = "img-container">
+
+<center>
+<div class = "img">
+	<img src="still life.jpeg" alt="BIGBANG">
+	<img src="bloodline.jpeg" alt="ARIANA GRANDE">
+	<img src="swift.jpeg" alt="TAYLOR SWIFT">
+	<img src="blackpink.jpeg" alt="BLACKPINK">
+	<img src="haruharu.jpeg" alt="BIGBANG">
+	<h2>(Some of my favourite songs from playlist)</h2>
+</div>
+</center>
+</div>
+
+<form>
+<center>
+<div class = "rate">
+<h1>RATE ALL THE MEDIAS</h1>
+
+<h4>
+<div class="txtb-rate">
+<input type="text" placeholder="email address" required oninvalid="this.setCustomValidity('this field is mandatory')" oninput="this.setCustomValidity('')">
+</div>
+
+<div class="txtb-rate">
+<input type="radio">
+  <label>male</label>
+   <br>
+  <input type="radio">
+  <label>female</label><br>					
+</div>
+
+<div class="txtb-rate">
+<input type="text" placeholder="rating(e.g 1,2,3...)" required oninvalid="this.setCustomValidity('this field is mandatory')" oninput="this.setCustomValidity('')">
+</div>
+
+<center>
+<h1>WHY?</h1>
+<h4>
+<label class="container">content
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">design
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+</center>
+</h4>
+</div>
+
+<form>
+<center>
+<div class = "rate">
+<h1>SUGGESTION/COMMENT</h1>
+
+<div class="txtb-rate">
+<select name="answer">
+<option value="SELECT">select
+<option value="YES">yes
+<option value="NO">no
+</select>
+</div>
+
+<h4>
+<div class="txtb">
+<span class="details">suggestion/comment</span>
+<p>
+<textarea></textarea>
+</p>
+</div>
+</h4>
+</form>
+</form>
+
+<center>
+<button>submit</button>
+</center>
+</button>
+<h2>thank you!</h2>
+</div>
+</form>
+
+<br>
+<div>
+<hr width=100% color = #b69d81>
+</div>
+
+</body>
+</html>
